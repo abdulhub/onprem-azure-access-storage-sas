@@ -27,14 +27,14 @@ public class SpringAzureStorageApplication {
 		 return (args) -> {
 	            
 			   // Authenticator.setDefault(new ProxyAuthenticator(USERID, PASSWORD));
-				System.setProperty("http.proxyHost", "rb-proxy-apac.bosch.com");
+				System.setProperty("http.proxyHost", "httpserver");
 				System.setProperty("http.proxyPort", "8080");
-				System.setProperty("https.proxyHost", "rb-proxy-apac.bosch.com");
+				System.setProperty("https.proxyHost", "httpsserver");
 				System.setProperty("https.proxyPort", "8080"); 
 				System.setProperty("http.proxyUser", USERID);
-		        System.setProperty("http.proxyPassword", PASSWORD);
+		                System.setProperty("http.proxyPassword", PASSWORD);
 				System.setProperty("https.proxyUser", USERID);
-		        System.setProperty("https.proxyPassword", PASSWORD);
+		                System.setProperty("https.proxyPassword", PASSWORD);
 		 
 	 };
 	 }
